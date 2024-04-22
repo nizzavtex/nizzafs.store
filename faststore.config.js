@@ -1,80 +1,99 @@
+
 module.exports = {
   seo: {
-    title: "NextJSStore",
-    description: "Fast Demo Store",
-    titleTemplate: "%s | FastStore",
-    author: "Store Framework",
-  },
-  theme: "custom-theme",
-  platform: "vtex",
+  "title": "FastStore",
+  "description": "A fast and performant store framework",
+  "titleTemplate": "%s | FastStore",
+  "author": "FastStore"
+},
+
+  // Theming
+  theme: 'custom-theme',
+
+  // Ecommerce Platform
+  platform: 'vtex',
+
+  // Platform specific configs for API
   api: {
-    storeId: "storeframework",
-    workspace: "master",
-    environment: "vtexcommercestable",
-    hideUnavailableItems: false,
+    storeId: "nizzafs",
+    workspace: 'master',
+    environment: 'vtexcommercestable',
+    hideUnavailableItems: true,
     incrementAddress: false,
   },
+
+  // Default session
   session: {
     currency: {
-      code: "USD",
+      code: "COP",
       symbol: "$",
     },
-    locale: "en-US",
-    channel: '{"salesChannel":"1","regionId":""}',
-    country: "USA",
+    locale: "es-CO",
+    channel: '{"salesChannel":1,"regionId":""}',
+    country: "COL",
     deliveryMode: null,
     addressType: null,
     postalCode: null,
     geoCoordinates: null,
     person: null,
   },
+
   cart: {
-    id: "",
+    id: '',
     items: [],
     messages: [],
     shouldSplitItem: true,
   },
-  storeUrl: "https://vtexfaststore.com",
-  secureSubdomain: "https://secure.vtexfaststore.com",
+
+  // Production URLs
+  storeUrl: "https://nizzafs.vtex.app",
+  secureSubdomain: "https://secure.vtexfaststore.com/",
   checkoutUrl: "https://secure.vtexfaststore.com/checkout",
   loginUrl: "https://secure.vtexfaststore.com/api/io/login",
   accountUrl: "https://secure.vtexfaststore.com/api/io/account",
+
   previewRedirects: {
-    home: "/",
-    plp: "/office",
-    search: "/s?q=headphone",
-    pdp: "/apple-magic-mouse/p",
+    home: '/',
+    plp: "/clothes",
+    search: "/s?q=Brand%20name",
+    pdp: "/short-azul/p",
   },
+
+  // Lighthouse CI
   lighthouse: {
-    server: "http://localhost:3000",
+    server: process.env.BASE_SITE_URL || 'http://localhost:3000',
     pages: {
-      home: "/",
-      pdp: "/apple-magic-mouse/p",
-      collection: "/office",
+      home: '/',
+      pdp: "/short-azul/p",
+      collection: "/clothes",
     },
   },
+
+  // E2E CI
   cypress: {
     pages: {
-      home: "/",
-      pdp: "/apple-magic-mouse/p",
-      collection: "/office",
-      collection_2: "/technology",
-      collection_filtered:
-        "/office/?category-1=office&marca=acer&facets=category-1%2Cmarca",
-      search: "/s?q=orange",
+      home: '/',
+      pdp: "/short-azul/p",
+      collection: "/clothes",
+      collection_filtered: "/clothes/?category-1=clothes&brand=Brand%20name&facets=category-1%2Cbrand%27",
+      search: "/s?q=Brand%20name",
     },
+    browser: 'electron',
   },
+
   analytics: {
-    gtmContainerId: "GTM-PGHZ95N",
+    // https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation,
+    gtmContainerId: "GTM-1234567",
   },
+
   experimental: {
     nodeVersion: 18,
     cypressVersion: 12,
   },
-  account: "storeframework",
+
   vtexHeadlessCms: {
     webhookUrls: [
-      "https://storeframework.myvtex.com/cms-releases/webhook-releases",
+      "https://nizzafs.myvtex.com/cms-releases/webhook-releases",
     ],
   },
-};
+}
