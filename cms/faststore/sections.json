@@ -1,0 +1,38 @@
+[
+    {
+      "name": "LiveShoppingScriptWebOps",
+      "schema": {
+        "title": "Live Shopping Script WebOps",
+        "description": "Live Shopping Script WebOps",
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": ""
+          }
+        }
+      }
+    },
+    {
+      "name": "LiveShoppingWCWebOps",
+      "schema": {
+        "title": "Live Shopping WC WebOps",
+        "description": "Live Shopping WC WebOps",
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": ""
+          }
+        }
+      }
+    }
+  ]

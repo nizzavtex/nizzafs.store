@@ -1789,6 +1789,27 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.5.6.tgz#4a3e2a206251abc729339ba85f60bc0433c2865d"
   integrity sha512-Cqfe1YmOS7k+5mGu92nl5ULkzpKuxJrP3+4AEuPmrpFZ3BHxTY3TnHmU1On3bFmFFs6FbTcdF58CCUProGpIGQ==
 
+"@nizza/core@^0.5.7":
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/@nizza/core/-/core-0.5.7.tgz#69f7d3e5f655c65cdee3c63ed385f78b43acc4e4"
+  integrity sha512-gXetOwH30eGauKsUlQjE8GPt1OuWjm6VRa59IEMsFmMA2rn+B7L3LqGkp6zRpSI2q6ereJQIjypFaK3n/4tuOA==
+
+"@nizza/event-products@^0.2.13":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@nizza/event-products/-/event-products-0.2.13.tgz#f6d8bcb0633f06a19df55b73248ca81d2f5ba3c6"
+  integrity sha512-blt58fD5X8tcOZd2OBxmBvTo62KEA1loFtSD+wH6jVUWSGom6LuR3dG8PDbIJqQwNCO8lcKJmoNZBVJfkRnjHw==
+  dependencies:
+    "@nizza/core" "^0.5.7"
+
+"@nizza/utils@^0.3.10":
+  version "0.3.12"
+  resolved "https://registry.yarnpkg.com/@nizza/utils/-/utils-0.3.12.tgz#2695954a0b6e75b728fb31c3c539442ab3197ba2"
+  integrity sha512-6jip8RJYnzKEPubwGW/m8OzoJyJYkwYBbR2vL+qglCu2mx7/U4TtKCBF+yzmpko1Rrzlo1NbdC3g/hnjP3N96Q==
+  dependencies:
+    "@nizza/core" "^0.5.7"
+    "@nizza/event-products" "^0.2.13"
+    js-cookie "^3.0.5"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -5324,6 +5345,11 @@ jpeg-js@^0.4.1, jpeg-js@^0.4.3:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.4.4.tgz#a9f1c6f1f9f0fa80cdb3484ed9635054d28936aa"
   integrity sha512-WZzeDOEtTOBK4Mdsar0IqEU5sMr3vSV2RqkAIzUEV2BHnUfKGyswWFPFwK5EeDo93K3FohSHbLAjj0s1Wzd+dg==
+
+js-cookie@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.5.tgz#0b7e2fd0c01552c58ba86e0841f94dc2557dcdbc"
+  integrity sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==
 
 js-library-detector@^6.4.0:
   version "6.6.0"
