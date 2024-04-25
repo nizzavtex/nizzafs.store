@@ -5,7 +5,7 @@ const ACCOUNT = fastStoreConfig.api.storeId;
 
 const ThirdPartyScripts = () => {
     return (
-      <LiveShoppingScript id="dcdafb42-8913-46cf-b8b8-04f56ddc1ccd" account={ACCOUNT}/>
+      <LiveShoppingScript id="99c86792-87b4-4b5b-b965-acc016819d6c" account={ACCOUNT}/>
     )
   }
   
